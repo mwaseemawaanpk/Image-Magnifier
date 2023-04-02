@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./magnify-image-hover/css/jquery.jqZoom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Document</title>
+    <script src="./magnify-image-hover/js/jquery.jqZoom.js"></script>
+</head>
+
+<body>
+    <div class="zoom-box" >
+        <img id="pic" src="./iphone.jpg" width="100" height="100"  style="border: 4px solid rgb(13, 13, 53)"/>
+    </div>
+
+
+    <script>
+        $(function () {
+            $("#pic").jqZoom({
+                selectorWidth: 30, 
+                selectorHeight: 30,
+                viewerWidth: 700,
+                viewerHeight: 700
+            });
+        })
+    </script>
+</body>
+
+</html>
